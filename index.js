@@ -8,6 +8,7 @@ circleButton.addEventListener("click", runSpeechRecognition);
 
 function runSpeechRecognition() {
   const recognition = new webkitSpeechRecognition();
+  recognition.lang = 'id-ID'
 
   recognition.onstart = function () {
     circleButton.innerHTML = "<p>Listening...</p>";
